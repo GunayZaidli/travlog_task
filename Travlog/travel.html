@@ -1,0 +1,1166 @@
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>travel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    body{
+        background-image: linear-gradient(to right bottom, pink 0 5%, white 10% 20%);
+    }
+    .container{
+        margin: 2% 4%;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%px;
+        height: 100px;
+        padding-top: 25px;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 50px;
+    }
+    button{
+        background-color: #5D50C6;
+        color: white;
+        border-radius: 30px;
+        border: none;
+        padding: 16px 32px;
+    }
+    button:hover{
+        background-color: rgb(202, 196, 189);
+        color: black;
+    }
+    .right:hover , .left:hover {
+        background-color: rgb(202, 196, 189);
+        color: black;
+    }
+    .logo{
+        width: 80px;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .name h3{
+        color: black;
+    }
+    .menu button{
+        padding: 10px;
+        border-radius: 10px;
+    }
+    h3{   
+        font-weight: 900;
+    }
+    .name{
+        margin-bottom: 40px;
+    }
+    #info{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+    .photos img{
+         width: 600px;
+         order: 2;
+    }
+    .travel{
+            width:400px;
+            height: 500px;
+            order: 1;
+    }
+    
+    .travel1{
+        font-size: 70px;
+        font-weight: 900;
+        margin: 20px;
+    }
+    span{
+        font-size: 70px;
+        color: rgb(223, 86, 109);
+        font-weight: 900;
+    }
+    .travel2{
+        color: rgba(0, 0, 0, 0.397);
+        font-size: 20px;
+        margin: 20;
+    }
+    .buttons{
+       display: flex;
+       gap: 20px;
+       width: 500px;
+      
+    }
+    .buttons button{
+        font-size: 20px;
+        border-radius: 50px;
+        margin: 10px;
+    }
+    
+    .explore{
+        width: 200px;
+        height: 35px;
+        color: #F85E9F;
+        padding: 8px 15px 5px 40px;
+        border-radius: 30px;
+        font-size: 20px;
+        margin: 0 30px 50px 20px;
+        box-shadow: 1px 15px 20px rgba(0, 0, 0, 0.212);
+    }
+    #ticket{
+        width: 95%;
+        height: 30px;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 80px;
+        margin-top: 3%;
+    }
+                                /* card1 section */
+    .basliq{
+        width: 400px; 
+    }
+    h4{
+        color:#F85E9F;
+        font-size: 20px;
+        text-align: left;
+        margin-left: 0;
+    }
+    h2{
+        font-size: 40px;
+        font-weight: 900;
+    }
+    .cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 700px;
+        
+    }
+     .card{
+        width: 300px;
+        height: 350px;
+        border: 1px solid rgba(0, 0, 0, 0.075);
+        border-radius: 20px;
+       text-align: center;
+       margin: 15px;
+    }
+    #cards1{
+        display:flex;
+        flex-direction: row;
+        margin-top: 100px;
+    }
+    h5{
+        margin: 30px;
+        font-size: 25px;
+        font-weight: 900;
+       
+    }
+    #cards1 p{
+        margin: 40px;
+        color: rgba(0, 0, 0, 0.486);
+    }
+    #cards1 img{
+        margin-top: 25px;
+    }
+                            /*  card2 section  */
+    .basliq2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+    }
+    .basliq2 h4 , .basliq2 h2{
+        width: 400px;
+        text-align: left;
+    }
+    
+    .arrows{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 230px;
+    }
+    .left , .right {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: #5D50C6;
+        position: relative;
+    }
+.left i , .right i{
+    position: absolute;
+    bottom: 37px;
+    right: 37px;
+    color: white;
+    font-size: 25px;
+    
+}
+    .cards2{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        gap: 50px;
+    }
+    .card2{
+        width: 350px;
+        height: 500px;
+        border: 1px solid rgba(0, 0, 0, 0.274);
+        border-radius: 40px;
+        overflow: hidden;
+    }
+    .card2 img{
+        width: 100%;
+        height: 300px;
+    }
+    .card2 h4{
+        margin-left:200px;
+        margin-bottom: 5px;
+    }
+    h5{
+        margin:5px;
+    }
+    .card2 p{
+        margin: 5px;
+        color: rgba(0, 0, 0, 0.432);
+    }
+    .card2 h6{
+        font-size: 20px;
+        color: #FF5722;
+        margin: 10px 5px;
+    }
+    .card2 div{
+        width:70%;
+        height: 150px;
+        margin-top: 10px;
+    }
+#cards_2{
+    margin-top: 50px;
+}
+                  /* card3 section */
+
+             #three {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 50px;
+             }
+             .dis{
+                width: 50%;
+             }
+             .dis img{
+                width: 100%;
+             }
+           
+             .basliq3{
+                width: 80%;
+             }
+             .cards3{
+                display: flex;
+                flex-direction: row;
+                flex-wrap:wrap;
+                gap: 30px 50px;
+             }
+                  
+             .point{
+                width: 40%;
+             }
+             .card3{
+                width: 150px;
+                height: 100px;
+                border: 1px solid rgba(0, 0, 0, 0.116);
+                border-radius: 30px;
+                text-align: center;
+             }
+             h3{
+                color:#FF5722;
+                font-size: 35px;
+                font-weight: 800;
+                margin: 5px;
+             }
+             .basliq3 p{
+                color: rgba(0, 0, 0, 0.514);
+             }
+                                 /* card4 section */
+                .card4{
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    margin-top: 20px;
+                    gap: 15px;
+                }
+                .icons{
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 15px;
+                    background-color: #FF5722;
+                    padding: 20px;
+                    margin-right: 15px;
+                }
+                .icons i{
+                    font-size: 20px;
+                    color: white;
+                }
+                .lorem p{
+                    color: rgba(0, 0, 0, 0.541);
+                    font-size: 20px;
+                }
+                .lorem h5{
+                    font-size: 30px;
+                }
+
+                                    /* carusel*/
+             .carousel{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                position: relative;
+                gap: 15px;
+             }
+             .carousel .arrows{
+                width: 100%;
+                position: absolute;
+                top: 50%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+             }
+             .star i{
+                margin: 10px;
+                color: #FACD49;
+             }
+             .carousel p{
+                color: rgba(0, 0, 0, 0.534);
+             }
+             .carousel h5 , .carousel span{
+                font-size: 30px;
+                font-weight: 800;
+             }
+             .carousel span{
+                color:#FF5722;
+             }
+                                                /*Subscribe*/
+                 .basliq_son h4 , .basliq_son{
+                    text-align: center;
+                 }
+                 .email button , input{
+                    height: 100px;
+                    border-radius: 20px;
+                 }
+                 input{
+                    width: 55%;
+                    border: none;
+                    font-size: 30px;
+                 }
+                 .email i{
+                    font-size: 40px;
+                    position: relative;
+                    right: 70px;
+                    top: 35px;
+                    color: rgba(0, 0, 0, 0.479);
+                 }
+                 .email button{
+                    width: 35%;
+                 }
+                 .email{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 15px;
+                    width: 80%;
+                    margin: auto;
+                 }
+                                 /* footer  */
+        footer p{
+            color: rgba(0, 0, 0, 0.527);
+        }
+        .end{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+            justify-content: space-between;
+        }
+        #foot_1{
+            width: 40%;
+        }
+        #foot_2{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 50%;
+        }
+        .sm{
+            width: 15px;
+            height: 15px ;
+            padding: 10px;
+            border-radius: 50%;
+            background-color:#5D50C6;
+        }
+        .sm i{
+            font-size: 15px;
+            color: white;
+        }
+        .sosial{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 40%;
+        }
+        #foot_2 i{
+            display: none;
+        }
+
+    @media(max-width:768px){
+        ul , .in{
+            display: none;
+        }
+       .logo{
+        order: 1;
+       }
+       div.menu , button.menu{
+        order: 2;
+        display: initial;
+       }
+        .photos img{
+        width: 100px;
+        height: auto; 
+        margin: 0;
+        }
+        .travel{
+            width:100%;
+            height: 1200px;
+        }
+        .explore{
+            margin: auto; 
+        }
+        .travel1 , span{
+            font-size: 80px;
+        }
+        .travel2{
+            font-size: 30px;
+        }
+        .buttons{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0;
+      width: 100%;
+      margin-left: 0;
+    }
+    .buttons button{
+       width: 600px;
+       height: 100px;
+       margin-left: 0;
+       padding: 0;
+    }
+  
+    #info{
+        height: 1500px;
+     
+    }
+    #ticket{
+        width: 600px;
+        height: 100px;
+        display:flex;
+        flex-wrap: wrap;
+        gap: 10px 30px;
+        justify-content: center;
+    }
+    .explore{
+        margin: 0;
+    }
+                             /* card1 section */
+    .basliq{
+        width: 100%; 
+    }
+    h4{
+        color:#F85E9F;
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    h2{
+        font-size: 50px;
+        font-weight: 900;
+        text-align: center;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        
+    }
+    .card{
+        width: 600px;
+        height: 350px;
+        border: 1px solid rgba(0, 0, 0, 0.13);
+        border-radius: 20px;
+       text-align: center;
+       margin: 15px;
+    }
+    #cards1{
+        display:flex;
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    h5{
+        margin: 30px;
+        font-size: 35px;
+        font-weight: 900;
+       
+    }
+    #cards1 p{
+        font-size: 20px;
+        margin: 40px;
+        color: rgba(0, 0, 0, 0.486);
+    }
+    #cards1 img{
+        margin-top: 25px;
+        width: 60px;
+    }
+                                             /* card2 section */
+     .basliq2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 400px;
+        margin: auto;
+    }
+    .basliq2 h4 , .basliq2 h2{
+        width: 600px;
+        text-align: center;
+        font-size: 40px;
+    }
+    
+    .arrows{
+        width: 600px;
+    }
+
+    .cards2{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: center;
+        gap: 0;
+        margin: 0;
+        padding: 0;
+    }
+    .card2{
+        width: 600px;
+        height: 600px;
+    }
+    .card2 img{
+        width: 100%;
+        height: 400px;
+    }
+    .card2 h4{
+        text-align: left;
+        margin-left: 0;
+        font-size: 20px;
+    }
+    h5{
+        margin:2px;
+    }
+    .card2 p{
+        margin: 2px;
+        color: rgba(0, 0, 0, 0.432);
+    }
+    .card2 h6{
+        font-size: 10px;
+        color: #FF5722;
+        
+    }
+    .card2 div{
+        width: 100%;
+        margin-top: 10px;
+        height: 200px;
+    }
+                            /* card3 section */
+                
+             
+             .dis{
+                width: 100%;
+             }
+             .dis img{
+                width: 100%;
+             }
+           
+             .basliq3{
+                width: 100%;
+             }
+             .cards3{
+                width: 100%;
+                gap: 20px;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+             }
+             .point{
+                width: 100%;
+             }
+             .card3{
+                width: 100%;
+                height: 100px;
+             }
+                                     /* card4 section */
+             .card4{
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    margin-top: 20px;
+                }
+                                       /* carusel*/
+            
+             .carousel .arrows{
+                position: static;
+             }
+                                                             /*Subscribe*/
+
+                 input{
+                    width: 100%;
+                
+                 }
+                 .email i{
+                    font-size: 40px;
+                    position: relative;
+                    left: 450px;
+                    top: -80px;
+                    color: rgba(0, 0, 0, 0.479);
+                 }
+                 .email button{
+                    width: 100%;
+                 }
+                 .email{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2px;
+                    width: 80%;
+
+                 }
+                                                  /* footer */
+                 #foot_2{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: space-between;
+            width: 90%;
+        }
+            #foot_2 p{
+                display: none;
+            }
+            #foot_2 i{
+            display: block;
+            font-size: 20px;
+        }
+           #foot_2 div{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+           }
+    }
+
+    @media(max-width:992px){
+        ul{
+            display: none;
+        }
+        .menu{
+            order: 1;
+        }
+        .logo{
+            order: 2;
+        }
+        .in{
+            order: 3;
+        }
+        .photos img{
+        margin: 5%;
+        width: 100%;
+    }
+    .travel{
+            width:100%;
+            height: auto;
+            text-align: center;
+    }
+    .explore{
+            margin: auto; 
+        }
+        .travel1 , span{
+            font-size: 100px;
+        }
+        .buttons{
+       display: flex;
+       flex-direction: row;
+       gap: 30px;
+       margin:auto;
+    }
+    .buttons button{
+        width: 100%;
+        font-size: 20px;
+        align-items: center;
+    }
+    #ticket{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px 70px;
+        justify-content: center;
+    }
+    #info{
+        width: 100%;
+        height: 2000px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 50px;
+    }
+   
+                                /* cards1 section */
+    .basliq{
+        width: 100%; 
+    }
+    h4{
+        color:#F85E9F;
+        font-size: 30px;
+        text-align: center;
+    }
+    h2{
+        font-size: 50px;
+        font-weight: 900;
+        text-align: center;
+    }
+    .cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        
+    }
+    .card{
+       text-align: center;
+       margin: 15px;
+    }
+    #cards1{
+        display:flex;
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    h5{
+        margin: 30px;
+        font-size: 25px;
+        font-weight: 900;
+       
+    }
+    #cards1 p{
+        margin: 40px;
+        color: rgba(0, 0, 0, 0.486);
+    }
+    #cards1 img{
+        margin-top: 25px;
+    }
+                                             /* card2 section */
+    .basliq2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 400px;
+        margin: auto;
+    }
+    .basliq2 h4 , .basliq2 h2{
+        text-align: center;
+        font-size: 40px;
+        width: 100%;
+    }
+    .arrows{
+        margin: auto;
+    }
+    .cards2{
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        gap: 50px;
+        width: 100%;
+    }
+    .card2 img{
+        width: 100%;
+    }
+    
+    .card2 h4{
+        text-align: left;
+        margin-left: 0;
+        font-size: 20px;
+    }
+    h5{
+        margin:2px;
+    }
+    .card2 p{
+        margin: 2px;
+        color: rgba(0, 0, 0, 0.432);
+    }
+    .card2 h6{
+        font-size: 10px;
+        color: #FF5722;
+        
+    }
+    .card2 div{
+        width: 200px;
+        margin-top: 10px;
+    }
+        
+#cards_2{
+    margin-top: 50px;
+}
+    
+                            /* card3 section */
+
+             #three {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+             }
+             .dis{
+                width: 100%;
+             }
+             .dis img{
+                width: 100%;
+             }
+           
+             .basliq3{
+                width: 100%;
+             }
+             .cards3{
+                gap: 30px 50px;
+                justify-content: center;
+             }
+             .point{
+                width: 100%;
+             }
+             .card3{
+                width: 300px;
+                height: 100px;
+             }
+                                       /* footer  */
+       
+        .end{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        #foot_1{
+            width: 100%;
+        }
+       
+        .sosial{
+            width: 20%;
+        }
+        #foot_2{
+            width: 100%;
+        }
+             
+    }
+    @media(max-width:2000px){
+        .menu{
+            display: none;
+        }
+        
+    }
+</style>
+</head>
+<body>
+    
+        <header>
+            <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="Vector.png" width="40px" height="40px">
+                    <div class="name">
+                    <h3>Travlog</h3>
+                </div>
+                </div>
+                <ul>
+                    <li>Home</li>
+                    <li>Discover</li>
+                    <li>Special Deals</li>
+                    <li>Contact</li>
+                </ul>
+                <div class="in">
+                    <button class="login">Log in</button>
+                    <button class="signup">Sign up</button>
+                </div>
+                <div class="menu">
+                <button class="menu"><i class="fa-solid fa-bars"></i></button>
+            </div>
+            </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+            <section id="info">
+        
+                <div class="photos">
+                    <img src="section1.png">
+                </div>
+                <div class="travel">
+                    <div class="explore"> Explore the world! <i class="fa-solid fa-briefcase"></i></div>
+                    <p class="travel1">Travel <span>top destination</span> of the world</p>
+                    <p class="travel2">We always make our customer happy by providing as many choises as possible</p>
+                    <div class="buttons">
+                        <button>Get Started</button><button>Watch Demo</button>
+                    </div>
+                </div>
+                
+            </section>
+
+            <section id="ticket">
+                
+                <img src="Group1.png" alt=""><img src="Group2.png" alt=""><img src="Group3.png" alt=""><img src="Group4.png" alt="" class="newline"><img src="Group5.png" alt="">
+                 
+            </section>
+            
+            <section id="cards1">
+                
+                <div class="basliq">
+                    <h4>SERVİCES</h4>
+                    <h2>Our top value categories for you</h2>
+                </div >
+                <div class="cards">
+                <div class="card">
+                    <img src="destination 1.png" alt="">
+                    <h5>Best Tour Guide</h5>
+                    <p>What looked like a small patch of purple grass, above five feet.</p>
+                </div>
+                <div class="card">
+                    <img src="booking 1.png" alt="">
+                    <h5>Easy Booking</h5>
+                    <p>Square, was moving across the sand in their direction.</p>
+                </div>
+                <div class="card">
+                    <img src="cloudy 1.png" alt="">
+                    <h5>Weather Forecast</h5>
+                    <p>What looked like a small patch of purple grass, above five feet.</p>
+                </div>
+                </div>
+               
+            </section>
+
+            <section id="cards_2">
+                
+                <div class="basliq2">
+                    <div>
+                    <h4>TOP DESTINATION</h4>
+                    <h2>Explore top destination</h2>
+                </div>
+                    <div class="arrows">
+                        <div class="left"><i class="fa-solid fa-arrow-left"></i></div>
+                        <div class="right"><i class="fa-solid fa-arrow-right"></i></div>
+                    </div>
+                </div >
+                <div class="cards2">
+                <div class="card2">
+                    <img src="Rectangle 6.png" alt="">
+                    <div>
+                    <h4>$550.16</h4>
+                    <h5>BParadise Beach, Bantayan Island</h5>
+                    <p>Rome, Italy</p>
+                    <h6>4.8<i class="fa-solid fa-star"></i></h6>
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Rectangle 6 (1).png" alt="">
+                    <div>
+                    <h4>$20.99</h4>
+                    <h5>Ocean with full of Colors</h5>
+                    <p>Maldives</p>
+                    <h6>4.5<i class="fa-solid fa-star"></i></h6>
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="Rectangle 6 (2).png" alt="">
+                    <div>
+                    <h4>$150.99</h4>
+                    <h5>Mountain View, Above the cloud</h5>
+                    <p>United Arab Emeries </p>
+                    <h6>5.0<i class="fa-solid fa-star"></i></h6>
+                    </div>
+                </div>
+                </div>
+            
+            </section>
+
+            <section id="cards_3">
+    
+                <div id="three">
+                <div class="dis"><img src="Group t.png" alt=""></div>
+                <div class="point">
+                <div class="basliq3"> <h4>TRAVEL POINT</h4>
+                    <h2>Explore top destination</h2>
+                  <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p></div>
+                    <div class="cards3">
+            <div class="card3">
+                <h3>500+</h3>
+                <p>Holiday Package</p>
+            </div>
+            <div class="card3">
+                <h3>100</h3>
+                <p>Luxury Hotel</p>
+            </div>
+            <div class="card3">
+                <h3>7</h3>
+                <p>Premium Airlines</p>
+            </div>
+            <div class="card3">
+                <h3>2k+</h3>
+                <p>Happy Customer</p>
+            </div>
+            </div>
+            </div>
+            </div>
+             </section>
+
+             <section id="card_4">
+                <div id="three">
+                <div class="dis"><img src="BACKGROUND.png" alt=""></div>
+                <div class="point"> 
+                    <div class="basliq3"> 
+                        <h4>KEY FEATURES</h4>
+                        <h2>We offer best services</h2>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
+                        </div>
+                        <div class="cards4">
+                            <div class="card4">
+                            <div class="icons"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="lorem">
+                                <h5>We offer best services</h5>
+                                <p>Lorem Ipsum is not simply random text</p>
+                            </div>
+                        </div>
+                        <div class="card4">
+                            <div class="icons"><i class="fa-solid fa-calendar-days"></i></div>
+                            <div class="lorem">
+                                <h5>Schedule your trip</h5>
+                                <p>It has roots in a piece of classical</p>
+                            </div>
+                        </div>
+                        <div class="card4">
+                            <div class="icons"><i class="fa-solid fa-ticket-simple"></i></div>
+                            <div class="lorem">
+                                <h5>Get discounted coupons</h5>
+                                <p>Lorem Ipsum is not simply random text</p>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                </div>
+                
+             </section>
+
+             <section id="carusel">
+                
+                <div class="carousel">
+                    <h4>TESTIMONIALS</h4>
+                    <h2>Trust our clients</h2>
+                    <img src="Ellipse 22.png" alt="...">
+                      <h5><span>Mark Smith</span>/Travel Enthusiast</h5><br>
+                     <div class="star"> <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                      <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
+                      <img src="Frame 52.png" alt="">
+                      <div class="arrows">
+                        <div class="left"><i class="fa-solid fa-arrow-left"></i></div>
+                        <div class="right"><i class="fa-solid fa-arrow-right"></i></div>
+                    </div>
+                    </div>
+                  
+                  
+             </section>
+
+             <section id="subscribe">
+               
+                <div class="basliq_son">
+                    <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
+                    <h2>Prepare yourself & let’s explore the beauty of the world</h2>
+            </div>
+                <div class="email">
+                    
+                    <label for=""></label><input type="email" placeholder="Your Email"><i class="fa-solid fa-envelope"></i></label>
+                    <button>Subscribe</button>
+                </div>
+                
+             </section>
+             </div>
+             </div>
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="end">
+           <div id="foot_1"> 
+            
+            <div class="logo">
+            <img src="Vector.png" width="40px" height="40px">
+            <div class="name">
+            <h3>Travlog</h3>
+        </div>
+        </div>
+        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
+        <div class="sosial">
+            <div class="sm"><i class="fa-brands fa-facebook-f"></i></div>
+            <div class="sm"><i class="fa-brands fa-twitter"></i></div>
+            <div class="sm"><i class="fa-brands fa-instagram"></i></div>
+        </div>
+        
+    </div>
+
+           <div id="foot_2">
+           
+            <div>
+                <h5>Company</h5>
+                <p>About</p>
+                <p>Career</p>
+                <p>Mobile</p>
+                <i class="fa-solid fa-circle-chevron-down"></i>
+            </div>
+            <div>
+                <h5>Contact</h5>
+                <p>Why Travlog?</p>
+                <p>Partner with us</p>
+                <p>FAQ’s</p>
+                <p>Blog</p>
+                <i class="fa-solid fa-circle-chevron-down"></i>
+            </div>
+            <div>
+                <h5>Meet Us</h5>
+                <p>+00 92 1234 56789</p>
+                <p>info@travlog.com</p>
+                <p>205. R Street, New York</p>
+                <p>BD23200</p>
+                <i class="fa-solid fa-circle-chevron-down"></i>
+            </div>
+            </div>
+        </div>
+           </div>
+        </footer> 
+</body>
+</html>
